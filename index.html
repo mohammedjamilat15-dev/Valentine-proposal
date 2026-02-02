@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Valentine ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      max-width: 420px;
+      width: 90%;
+      animation: fadeIn 1.5s ease;
+    }
+    h1 {
+      color: #ff2f6d;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #444;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    h2 {
+      color: #ff2f6d;
+      margin-top: 20px;
+    }
+    .buttons {
+      margin-top: 25px;
+    }
+    button {
+      padding: 12px 22px;
+      font-size: 18px;
+      margin: 10px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    button:hover {
+      transform: scale(1.05);
+    }
+    .yes {
+      background: #ff2f6d;
+      color: white;
+    }
+    .no {
+      background: #eee;
+      color: #333;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .heart {
+      font-size: 40px;
+      animation: beat 1s infinite;
+    }
+    @keyframes beat {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>Hey Baby</h1>
+    <p>
+      From the moment you came into my life, everything changed.  
+      You make me smile in ways I never knew I could.  
+      You make my bad days better and my good days even more beautiful.  
+    </p>
+    <p>
+      I just want you to know that you mean so much to me… more than words can explain.
+    </p>
+    <h2>Will you be my Valentine? 💖</h2>
+
+    <div class="buttons">
+      <button class="yes" onclick="yesClicked()">YES 😍</button>
+      <button class="no" onclick="noClicked()">NO 🙈</button>
+    </div>
+  </div>
+
+  <script>
+    function yesClicked() {
+      alert("Yaaay!!! ❤️ You just made me the happiest person ever. I love you so much 💕");
+    }
+
+    function noClicked() {
+      alert("Hehe 😜 You know you can’t say no to me. Try again 💖");
+    }
+  </script>
+
+</body>
+</html>
